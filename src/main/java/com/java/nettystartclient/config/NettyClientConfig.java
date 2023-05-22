@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class NettyClientConfig {
 
-    @Bean
+    @Bean(destroyMethod = "shutdownGracefully")
     public EventLoopGroup workerGroup() {
         return new NioEventLoopGroup();
     }

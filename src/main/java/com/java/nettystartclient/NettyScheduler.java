@@ -10,8 +10,8 @@ public class NettyScheduler {
 
     private final NettyService service;
 
-    @Scheduled(fixedRate = 5000)
-    public void scheduler() throws InterruptedException {
-        service.startClient();
-    }
+//    @Scheduled(fixedRate = 5000)
+//    public void scheduler() throws InterruptedException {
+//        service.startClient();
+//    }
 }
